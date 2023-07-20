@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+            
+        }
+        #wrapper
+        {
+            height:300vh;
+            width: 100vw;
+            background-color: bisque;
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            display: flex;
+            justify-content: center;
+            
+        }
+        .container{
+            width:850px;
+            height: 1200px;
+            background-color: white;
+            
+        }
+        .header{
+            margin:0.4em;
+            display: flex;
+            flex-direction: row;
+            gap:10em;
+        }
+        .sub{
+            margin-top: 0.5em;
+            color: gray;
+            text-decoration: underline;
+            font-size: 1em;
+        }
+        .title{
+            font-size: 1.8em;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .post{
+            display: flex;
+            flex-direction: row;
+        }
+        .left-part{
+           width: 550px;
+           height: 1200px;
+           /* border:2px solid black; */
+           padding: 0.5em;
+
+        }
+        .right-part{
+           width:250px;
+           height:700px;
+           /* border: 2px solid black; */
+
+           margin-left: 1em;
+           gap:20px;
+        }
+        .about-section{
+            padding: 0.8em;
+            /* background-color: aqua; */
+            /* border: 2px solid black; */
+        }
+        .arch{
+            padding: 0.8em;
+            /* border: 2px solid black; */
+        }
+        .link a{
+            text-decoration: none;
+            color: blue;
+        }
+        .list{
+            padding: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+
+            <div class="header">
+                <div class="sub">Subscribe</div>
+                <div class="title">Blog Title</div>
+            </div>
+
+            <div class="post">
+
+                <div class="left-part">
+                    
+                        <div class="sample">
+                            <h2>Sample blog post</h2>
+                            <p> January 1,2014 by <span class="link"><a href="">Mark</a></span></p>
+                            <br>
+                            <p>This blog post shows a few different types of content that's
+                                supported and styled with Bootstrap. Basic typography, images,
+                                and code are all supported.</p>
+                                <br>
+                                <hr>
+                                <br>
+                            <p>Cum sociis natoque penatibus et magnis
+                                <span class="link"><a href="">dis parturient montes</a></span>
+                                nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare
+                                sem lacinia quam venenatis vestibulum. Sed posuere consectetur
+                                est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+
+                                <br>
+                            <p>
+                                Curabitur blandit tempus porttitor. <b>Nullam quis risus eget urna mollis</b> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                            </p>
+
+                            <br>
+
+                            <p>
+                                Etiam porta sem <em>malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+                            </p>
+                            <br>
+                        </div>
+
+                        <div class="heading-section">
+                            <h2>Heading</h2><br>
+                            <p>
+                                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                            </p><br>
+                        </div>
+
+                        <div class="sub-heading">
+                            <h2>Sub-Heading</h2>
+                            <br>
+                            <p>
+                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+                            </p><br>
+                            <pre>Example code block</pre><br>
+
+                            <p>
+                                Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+                            </p>
+                            <br>
+                        </div>
+
+                        <div class="sub-heading">
+                            <h2>Sub-Heading</h2><br>
+                            <p>
+                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                            </p>
+
+                            <div class="list">
+                                <ul type="hollow">
+                                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                                    <li>Donec id elit non mi porta gravida at eget metus.</li>
+                                    <li>Nulla vitae elit libero, a pharetra augue.</li>
+                                </ul>
+                            </div>
+                            <p>
+                                Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+
+                            </p>
+
+                            <div class="list">
+                                <ol type="1">
+                                    <li>Vestibulum id ligula porta felis euismod semper.</li>
+                                    <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                                    <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                                </ol>
+                            </div>
+                            <p>
+                                Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+                            </p>
+                        </div>
+
+               </div>
+        
+               <div class="right-part">
+
+                        <div class="about-section">
+                            <h2><i>About</i></h2>
+                            <p>Etiam porta sem malesuada magna mollis euismod.
+                                Cras mattis consectetur purus sit amet fermentum.
+                                 Aenean lacinia bibendum nulla sed consectetur.</p>
+                        </div>
+                        <br>
+                        <div class="arch">
+                            <h2><i>Archives</i></h2>
+                            <div class="link"><a href="">March 2016</a></div>
+                            <div class="link"><a href="">April 2013</a></div>
+                            <div class="link"><a href="">May 2015</a></div>
+                            <div class="link"><a href="">July 2019</a></div>
+                            <div class="link"><a href="">August 2014</a></div>
+                            <div class="link"><a href="">November 2011</a></div>
+                            <div class="link"><a href="">January 2010</a></div>
+                            <div class="link"><a href="">October 2015</a></div>
+                            <div class="link"><a href="">Febuary 2019</a></div>
+                            <div class="link"><a href="">May 2013</a></div>
+                            <div class="link"><a href="">October 2014</a></div>
+                            <div class="link"><a href="">August 2012</a></div>
+                            
+                        </div>
+                        <br>
+                        <div class="arch">
+                            <h2><i>Elsewhere</i></h2>
+                            <div class="link"><a href="">Github</a></div>
+                            <div class="link"><a href="">Facebook</a></div>
+                            <div class="link"><a href="">Twitter</a></div>
+                        </div>
+               </div>
+
+               
+
+               
+
+
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
